@@ -37,6 +37,13 @@ const onKeyDown = (e) => {
         console.log('You are holding down ' + e.key);
     }
 
+    console.log('Shift: ' + e.shiftKey);
+    console.log('Control: ' + e.ctrlKey);
+    console.log('Alt: ' + e.altKey);
+
+    if (e.shiftKey && e.key === 'K'){
+        console.log('You hit shift + K');
+    }
 };
 
 

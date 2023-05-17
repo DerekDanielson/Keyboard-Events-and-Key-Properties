@@ -9,7 +9,21 @@ const onKeyUp = (e) => {
 };
 
 const onKeyDown = (e) => {
-    console.log('keyDown');
+    //console.log('keyDown');
+
+    // key
+    console.log(e.key);
+    document.querySelector('h1').innerText = e.key;
+
+    if (e.key === 'Enter'){
+        alert('Pressed enter');
+    }
+
+    // keyCode
+    // https://www.toptal.com/developers/keycode/table-of-all-keycodes
+    
+
+    // code
 };
 
 

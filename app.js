@@ -21,9 +21,22 @@ const onKeyDown = (e) => {
 
     // keyCode
     // https://www.toptal.com/developers/keycode/table-of-all-keycodes
-    
+    if (e.keyCode === 13) {
+        alert('Pressed enter');
+    }
 
     // code
+    console.log(e.code);
+
+    if (e.code === 'Digit1'){
+        console.log('Pressed 1');
+    }
+
+
+    if (e.repeat){
+        console.log('You are holding down ' + e.key);
+    }
+
 };
 
 
